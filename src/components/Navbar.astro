@@ -1,0 +1,72 @@
+---
+import ThemeIcons from "./icons/ThemeIcon.astro";
+---
+
+<nav>
+  <div class="container">
+    <div class="logo">
+      <h2>IsaacDSC</h2>
+    </div>
+    <div class="navigators">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Projects</a></li>
+        <li><a href="/">Contacts</a></li>
+        <li><a href="/">PT</a></li>
+        <li><a href="/"><ThemeIcons /></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* TODO: utilizar cores provindas do themes */
+  .container {
+    padding: 16px 80px;
+    height: 80px;
+    background: #171023;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: 300px 400px;
+    justify-content: space-between;
+  }
+
+  .container .logo h2 {
+    width: 82.97px;
+    height: 17.95px;
+    color: #f5f6f6;
+    padding: 0px 40px;
+    font-family: Lemon;
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .navigators ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 0px 1px;
+    padding: 10px;
+  }
+
+  nav ul li:hover {
+    transition: 500ms;
+    background-color: #1c132fdf;
+  }
+
+  nav a {
+    font-family: Heebo;
+    width: 59px;
+    height: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--Color-Text-text-primary, #f5f6f6);
+    border-radius: 4px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+</style>

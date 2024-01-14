@@ -1,0 +1,32 @@
+---
+import RightIcon from "./icons/RightIcon.astro";
+
+interface Props {
+  title: string;
+  Icon?: HTMLElement;
+  color: string;
+}
+const { color, title, Icon } = Astro.props;
+---
+
+<button>
+  Get in touch
+  <span>
+    <RightIcon />
+  </span>
+</button>
+
+<style>
+  button {
+    display: flex;
+    min-width: 112px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--Color-Surface-button-primary-default, #8a42db);
+    border: none;
+    cursor: pointer;
+  }
+</style>

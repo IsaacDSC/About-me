@@ -1,0 +1,158 @@
+---
+import BookIcon from "./icons/BookIcon.astro";
+import SocialLinks from "./SocialLinks.astro";
+---
+
+<article>
+  <div class="container">
+    <div class="photoProfile">
+      <img src="/images/space.jpeg" alt="photo profile" width="500" />
+      <SocialLinks />
+    </div>
+    <div class="description">
+      <div class="stacksContainer">
+        <ul>
+          <li>Go</li>
+          <li>Typescript</li>
+          <li>Javascript</li>
+          <li>Rust</li>
+          <li>Python</li>
+        </ul>
+      </div>
+      <div class="aboutme">
+        <h3>About me</h3>
+        <h2>
+          I'm software engnieer, Lorem ipsum dolor sit amet consectetur
+          adipisicing elit.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          itaque atque pariatur tempore maxime dolor. Rem aliquam aperiam fugit
+          exercitationem atque illo minima cupiditate expedita numquam. Quam in
+          doloremque rerum. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Necessitatibus eos dolorum reprehenderit labore at reiciendis
+          architecto unde sunt quas! Cum adipisci unde atque suscipit id aliquid
+          tenetur eaque magnam rerum.
+        </p>
+      </div>
+      <button>
+        <span><BookIcon /></span>
+        My resume
+      </button>
+    </div>
+  </div>
+</article>
+
+<style>
+  article {
+    background-image: url("/images/space.jpeg");
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grap: 136px;
+    padding: 72px;
+    background-color: rgba(25, 11, 39, 0.623);
+  }
+
+  .photoProfile img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .links-social ul {
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links-social ul li {
+    display: inline;
+    margin: 10px;
+  }
+
+  .links-social ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+  }
+
+  .links-social ul li a img {
+    background-color: #6060603a;
+    width: 35px;
+    height: 35px;
+  }
+
+  .description {
+    background-color: #8942db26;
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  .description .stacksContainer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .description .stacksContainer ul li {
+    display: inline;
+    padding: 16px;
+    background-color: rebeccapurple;
+    border-radius: 2px;
+    color: white;
+    margin: 0px 2px;
+  }
+
+  .description .aboutme {
+    padding: 32px 0px;
+  }
+
+  .description .aboutme h3 {
+    color: var(--Color-Stroke-stroke-highlight, #7dffaf);
+
+    font-family: Kalam;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 34px;
+    font-style: normal;
+    line-height: 16px;
+  }
+
+  .description .aboutme h2 {
+    color: var(--Color-Text-text-primary, #f5f6f6);
+    font-family: Heebo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  .description .aboutme p {
+    color: var(--Color-Text-text-secondary, #cdd0d4);
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .description button {
+    display: flex;
+    min-width: 112px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--Color-Surface-button-primary-default, #8a42db);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>

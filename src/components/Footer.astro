@@ -1,0 +1,206 @@
+---
+import RightIcon from "./icons/RightIcon.astro";
+---
+
+<footer>
+  <div class="container">
+    <div class="about">
+      <div class="description">
+        <h3>Contact</h3>
+        <h4>Enjoyed my work? Let’s work together</h4>
+        <p>
+          I’m always up for a chat. Pop me an email at
+          <a href="">hi@linalevi.com</a>
+          or give me a shout on social media.
+        </p>
+      </div>
+      <div class="socials-links">
+        <ul>
+          <li>
+            <a href="/">
+              <img src="/svg/logo-linkedin.svg" alt="Linkedin" />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="/svg/logo-github.svg" alt="Github" />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="/svg/logo-instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <form action="" class="forms">
+      <input type="text" name="name" id="name" placeholder="Name" required />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="E-mail"
+        required
+      />
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <button>
+        Send me a message
+        <span><RightIcon /></span>
+      </button>
+    </form>
+  </div>
+</footer>
+
+<style>
+  * {
+    color: white;
+  }
+
+  footer {
+    background-color: var(--Color-Surface-surface-background, #14151b);
+  }
+
+  .container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 136px;
+    background-image: url("/images/space.jpeg");
+    background-color: #2c204174;
+  }
+
+  .container .about {
+    padding: 72px;
+  }
+
+  .container .about .profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+  }
+
+  .container .about .description h3 {
+    color: var(--Color-Stroke-stroke-highlight, #7dffaf);
+    font-family: Kalam;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .container .about .description h4 {
+    color: var(--Color-Text-text-primary, #f5f6f6);
+    font-family: Heebo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  .container .about .description p {
+    color: var(--Color-Text-text-secondary, #cdd0d4);
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .container .about .socials-links ul li {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    background: var(--Color-Surface-surface-secondary, #413a4f);
+  }
+
+  .container .forms {
+    padding: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .container .forms input {
+    color: var(--Color-Text-text-secondary, #cdd0d4);
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    width: 488px;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    background: var(--Color-Surface-surface-background, #171023);
+    border: 1.5px solid var(--Color-Stroke-stroke-highlight, #2c2041);
+  }
+
+  .container .forms input:focus,
+  textarea:focus {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0;
+    border: 3px solid #7dffaf;
+  }
+
+  .container .forms textarea {
+    display: flex;
+    width: 488px;
+    height: 160px;
+    padding: 12px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--Color-Surface-surface-background, #171023);
+    border: 1.5px solid var(--Color-Stroke-stroke-highlight, #2c2041);
+  }
+
+  .container .forms input::placeholder {
+    color: var(--Color-Text-text-secondary, #cdd0d4);
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 1;
+  }
+
+  .container .forms button {
+    display: flex;
+    min-width: 112px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--Color-Surface-button-primary-default, #8a42db);
+    border: none;
+
+    color: var(--Color-Text-primary-button-label, #f5f6f6);
+    text-align: center;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  .container .forms button span {
+    display: flex;
+    align-content: center;
+  }
+</style>

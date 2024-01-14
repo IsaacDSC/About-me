@@ -1,0 +1,172 @@
+---
+import RightIcon from "./icons/RightIcon.astro";
+const projects = [{}, {}, {}, {}, {}, {}, {}];
+---
+
+<section>
+  <h2>Projects</h2>
+  <h3>Take a look at my highlighted projects</h3>
+  <div class="container">
+    {
+      projects.map((project, index) => {
+        return (
+          <div class="card-container">
+            <img src="/images/project-image.png" alt="bunner-project" />
+            <div class="timeline">
+              <span>Jul - Dec 2023</span>
+              <span>Go</span>
+            </div>
+            <div class="card-title">
+              <h4>Project Golang</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+                est cupiditate temporibus eligendi fugiat repellat, veritatis
+                sed similique quod ad ipsa ducimus! Magni dignissimos nisi
+                quaerat laboriosam corrupti vitae perferendis.
+              </p>
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+  <button>
+    Se all
+    <span><RightIcon /></span>
+  </button>
+</section>
+
+<style>
+  h2,
+  h3,
+  p,
+  h4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  section {
+    display: flex;
+    padding: 72px 112px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    background: var(--Color-Surface-surface-background, #171023);
+    padding: 72px 112px;
+  }
+
+  section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  section h2 {
+    color: var(--Color-Stroke-stroke-highlight, #7dffaf);
+    font-family: Kalam;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 28px;
+  }
+
+  section h3 {
+    color: var(--Color-Text-text-primary, #f5f6f6);
+    text-align: center;
+    font-family: Heebo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  section button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 112px;
+    padding: 16px 24px;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--Color-Surface-surface-secondary, #413a4f);
+    color: var(--Color-Text-text-primary, #f5f6f6);
+    font-family: Heebo;
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  section button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section .container .card-container {
+    background: var(--Color-Surface-surface-primary, #2c243b);
+    margin: 32px;
+    border-radius: 16px;
+    display: grid;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    cursor: pointer;
+  }
+
+  section .container .card-container:hover {
+    background-color: var(--Color-Surface-surface-primary, #36215e);
+    transition: 600ms;
+  }
+
+  section .container .card-container .timeline {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 136px;
+    width: 336px;
+  }
+
+  section .container .card-container .timeline span {
+    text-align: start;
+    color: var(--Color-Text-text-secondary, #cdd0d4);
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 16px;
+  }
+
+  section .container .card-container .card-title {
+    width: 336px;
+  }
+
+  section .container .card-container .card-title h4 {
+    color: var(--Color-Text-text-primary, #f5f6f6);
+    font-family: Heebo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  section .container .card-container .card-title p {
+    font-family: Heebo;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--Color-Text-text-primary, #dedede);
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+</style>
