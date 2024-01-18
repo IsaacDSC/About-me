@@ -1,0 +1,162 @@
+---
+
+---
+
+<article>
+  <div class="card-img">
+    <div class="card-feedback">
+      <h5>Deixe seu feedback</h5>
+      <div class="row">
+        <a href="#">
+          <div class="col">
+            <img src="/images/like.png" alt="Like" />
+          </div>
+        </a>
+        <a href="#">
+          <div class="col">
+            <img src="/images/bug.png" alt="Bug" />
+          </div>
+        </a>
+        <a href="#">
+          <div class="col">
+            <img src="/images/share.png" alt="Share" />
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="card-extra-infos">
+      <span>Jul - Dec 2022</span>
+      <span>Golang</span>
+    </div>
+    <h2>ProjectName</h2>
+    <div class="content-description">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, totam
+        consequatur? Magnam possimus neque enim, harum hic molestias ut
+        aspernatur quidem exercitationem ratione laudantium ex, facere odio,
+        sint porro impedit!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, totam
+        consequatur? Magnam possimus neque enim, harum hic molestias ut
+        aspernatur quidem exercitationem ratione laudantium ex, facere odio,
+        sint porro impedit!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, totam
+        consequatur? Magnam possimus neque enim, harum hic molestias ut
+        aspernatur quidem exercitationem ratione laudantium ex, facere odio,
+        sint porro impedit!
+      </p>
+    </div>
+  </div>
+</article>
+
+<style>
+  h5 {
+    margin: 0;
+  }
+  article {
+    width: 800px;
+    display: grid;
+  }
+
+  .card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    background-image: linear-gradient(
+      90deg,
+      #8a42db 10%,
+      rgb(156, 102, 226) 30%,
+      rgb(117, 141, 171) 45%,
+      rgb(123, 250, 177) 100%
+    );
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .card-feedback {
+    width: 384px;
+    height: 248px;
+    border-radius: 14px;
+    background-color: #18181a;
+  }
+
+  .card-img .card-feedback .row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .card-img .card-feedback .row .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #27272a;
+    width: 100px;
+    height: 130px;
+    color: white;
+    text-align: center;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  .card-img .card-feedback .row .col img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-feedback h5 {
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-family: Heebo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+  }
+
+  .content {
+    padding: 32px;
+    background: var(--Color-Surface-surface-primary, #2c243b);
+  }
+
+  .content .card-extra-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  }
+
+  .content .card-extra-infos span {
+    color: var(--Color-Text-text-secondary, #cdd0d4);
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .content h2 {
+    color: var(--Color-Text-text-primary, #f5f6f6);
+    font-family: Heebo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+  }
+  .content p {
+    color: var(--Color-Text-text-secondary, #cdd0d4);
+    font-family: Heebo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+  }
+</style>

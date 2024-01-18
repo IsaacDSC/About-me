@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import ProjectActions from "../components/ProjectActions.astro";
+---
+
+<Layout title="Welcome to Page IsaacDSC">
+  <Navbar />
+  <main>
+    <ProjectCard />
+    <ProjectActions />
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding: 32px 112px;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: 800px 384px;
+    justify-content: space-between;
+    background: var(--Color-Surface-surface-background, #171023);
+  }
+</style>
